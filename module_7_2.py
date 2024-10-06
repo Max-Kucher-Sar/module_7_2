@@ -1,6 +1,6 @@
 def custom_write(file_name, strings):
     strings_positions = {}
-    file = open(file_name, 'a', encoding='utf-8')
+    file = open(file_name, 'w', encoding='utf-8')
     for string in range(len(strings)):
         tell_number = file.tell()
         file.write(f'{strings[string]}\n')
